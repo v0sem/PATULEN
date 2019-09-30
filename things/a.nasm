@@ -47,7 +47,7 @@ menu:
 
 resta:
 
-	mov dword [_operando_1], 8
+	mov dword [_operando_1], 12
 	push dword [_operando_1]
 	pop dword ebx
 	push dword [_operando_1]
@@ -58,7 +58,7 @@ resta:
 	call print_string
 	add esp, 4
 
-	mov dword [_operando_2], 4
+	mov dword [_operando_2], 14
 	push dword [_operando_2]
 	pop dword ecx
 	push dword [_operando_2]
@@ -78,7 +78,7 @@ resta:
 	call menu
 
 multiplic:
-	mov dword [_operando_1], 8
+	mov dword [_operando_1], 12
 	push dword [_operando_1]
 	pop dword ebx
 	push dword [_operando_1]
@@ -89,7 +89,7 @@ multiplic:
 	call print_string
 	add esp, 4
 
-	mov dword [_operando_2], 4
+	mov dword [_operando_2], 14
 	push dword [_operando_2]
 	pop dword ecx
 	push dword [_operando_2]
@@ -109,7 +109,7 @@ multiplic:
 	call menu
 
 pot:
-	mov dword [_operando_1], 8
+	mov dword [_operando_1], 12
 	push dword [_operando_1]
 	pop dword ebx
 	push dword [_operando_1]
@@ -120,7 +120,7 @@ pot:
 	call print_string
 	add esp, 4
 
-	mov dword [_operando_1], 8
+	mov dword [_operando_1], 12
 	push dword [_operando_1]
 	call print_int
 	add esp, 4
@@ -139,5 +139,3 @@ pot:
 quit:
 	mov dword esp, [__esp]
 	ret
-
-
